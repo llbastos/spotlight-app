@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="pdf.js"></script> <!-- Extração do pdf -->
+    <script src="jspdf.debug.js"></script> <!-- Geração do pdf a partir do html -->
+    <script src='popup.js'></script> <!-- Script default -->
+  </head>
+  <body>
+    <input type=text id=filter placeholder=Filter style="display:none">
+    <input type=checkbox id=regex style="display:none">
+    <label for=regex style="display:none">Regex</label><br>
+    <button id=download0 style="display:none">Download</button>
+    <table id=links>
+      <tr>
+        <th><input type=checkbox checked id=toggle_all style="display:none"></th>
+        <th align=left style="display:none">URL</th>
+      </tr>
+    </table>
+    <button id=download1 style="display:none">Download</button>
+  </body>
+</html>
